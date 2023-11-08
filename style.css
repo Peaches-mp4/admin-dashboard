@@ -67,7 +67,14 @@
 }
 
 .container {
-    border: 2px solid black;
+    border: 2.5px solid red;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+.icon, .hd-icon {
+    width: 1.5rem;
+    height: auto;
 }
 
 /* sidebar css */
@@ -76,34 +83,47 @@
     grid-area: sd;
     background-color: var(--blue);
     width: 1fr;
+    color: black;
+    /* background-image: url(/images/pexels-photo-4887167.jpeg);
+    background-size: cover;
+    background-image: ; */
+}
+
+.sd-icon {
+    width: 1.2rem;
 }
 
 .title, .links, .user-settings {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    border: 5px solid red;
     padding: 1rem;
     gap: 0.7rem;
 }
 
 .title {
     font-size: 1.7rem;
-    color: white;
-    font-weight: 800;
+    font-weight: 700;
+    padding: 1.5rem 1.5rem 0.5rem 1rem;
+    display: grid;
 }
 
-.links {
+.title > h1 {
+    align-self: end;
+}
+
+.dash-icon {
+    width: 2rem;
 }
 
 a {
     text-decoration: none;
     color: black;
+    align-self: center;
 }
 
 .links > a, .user-settings > a {
-    font-size: 1.2rem;
-    color: white;
-    font-weight: 800;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 /* header */
@@ -208,7 +228,7 @@ button {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    padding: 1rem 1.5rem 1rem;
+    padding: 1rem 1.5rem 1rem 1rem;
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -247,9 +267,8 @@ button {
     align-self: end;
 }
 
-.icon, .sd-icon, .hd-icon {
-    width: 1.5rem;
-    height: auto;
+
+.icon {
     padding: 0.25rem;
 }
 
@@ -287,3 +306,8 @@ button {
     padding: 0 0.5rem 0.5rem 0;
     line-height: 0.9;
  } 
+
+ /* -add porfile picture pored notification bella
+ - mozda za dashboard neka transpparent siva pozadina da se bolje vidi i profesionalnije izgleda
+ -red borders su zanimljive ali domisliti
+ -background image za dashboard */
